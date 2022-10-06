@@ -1,6 +1,6 @@
 FROM alpine:3.14
 RUN apk update
-RUN apk add openjdk8
+RUN apk add openjdk11
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
 RUN mkdir -p "$CATALINA_HOME"
