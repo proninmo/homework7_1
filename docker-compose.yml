@@ -8,7 +8,7 @@ services:
         target: /boxfuse-sample-java-war-hello/target/
   
   prod:
-    image: tomcat:jre8-alpine
+    build: web
     volumes:
       - type: volume
         source: share
