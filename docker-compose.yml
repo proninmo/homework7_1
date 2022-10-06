@@ -5,14 +5,14 @@ services:
     volumes:
       - type: volume
         source: share
-        target: /boxfuse-sample-java-war-hello/target
+        target: /boxfuse-sample-java-war-hello/target/
   
   prod:
     image: tomcat:jre8-alpine
     volumes:
       - type: volume
         source: share
-        target: /usr/local/tomcat/webapps
+        target: /usr/local/tomcat/webapps/
     ports:
       - "80:8080"
 
