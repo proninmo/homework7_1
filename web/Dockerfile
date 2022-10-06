@@ -1,7 +1,7 @@
 FROM alpine:3.14
 RUN echo https://dl-cdn.alpinelinux.org/alpine/v3.14/community >> /etc/apk/repositories
 RUN apk update
-RUN apk add openjdk8-jre-base
+RUN apk add openjdk8-jre-base bash
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
 RUN mkdir -p "$CATALINA_HOME"
